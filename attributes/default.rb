@@ -29,6 +29,9 @@ default['ndb']['user-home']                           = "/home/#{node['ndb']['us
 default['ndb']['group']                               = node['install']['user'].empty? ? "mysql" : node['install']['user']
 default['ndb']['connectstring']                       = ""
 
+default['ndb']['uid']                                 = "10040"
+default['ndb']['gid']                                 = "10041"
+
 default['ndb']['DataMemory']                          = "512"
 default['ndb']['NoOfReplicas']                        = "1"
 default['ndb']['TcpBind_INADDR_ANY']                  = "FALSE"
